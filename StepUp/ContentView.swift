@@ -37,7 +37,7 @@ struct ContentView: View {
     
     @State private var noAccelerometerErrorAlertFlag = false
     
-    @State private var movementStatus : String = "Idle"
+    @State private var movementStatus : String = "Not Monitoring"
     @State private var movementStatusColor : Color = Color.gray
     @State private var stepCounter : Int = 0
     @State private var stepFlag : Bool = true
@@ -48,7 +48,7 @@ struct ContentView: View {
     private let stepThreshold : Double = 1.1
     private let stepReleaseThreshold : Double = 1.0
     private let runStepThreshold : Double = 1.4
-    private let jumpThreshold : Double = 2.4
+    private let jumpThreshold : Double = 2.0
     private let jumpPenalty : Int = 2
     private let moveRetentionTimeThreshold = 40
     
@@ -143,8 +143,7 @@ struct ContentView: View {
         dataArray.removeAll()
         timeIdx = 0
         lastStepTimeIdx = 0
-        movementStatus = "Idle"
-        movementStatusColor = Color.gray
+        lastMovementStatusTimeIdx = 0
         
         if monitoring {
             toggleMode()
@@ -159,6 +158,8 @@ struct ContentView: View {
         
         if monitoring {
             monitoring = false
+            movementStatus = "Not Monitoring"
+            movementStatusColor = Color.gray
             toggleLabel = "Start"
             toggleIcon = "play.circle.fill"
             toggleColor = Color.green
@@ -166,6 +167,8 @@ struct ContentView: View {
         else {
             if self.motion.isAccelerometerActive {
                 monitoring = true
+                movementStatus = "Idle"
+                movementStatusColor = Color.yellow
                 toggleLabel = "Pause"
                 toggleIcon = "pause.circle.fill"
                 toggleColor = Color.orange
@@ -258,7 +261,7 @@ struct ContentView: View {
                         }
                         
                         movementStatus = "Idle"
-                        movementStatusColor = Color.gray
+                        movementStatusColor = Color.yellow
                     }
                 }
             }
