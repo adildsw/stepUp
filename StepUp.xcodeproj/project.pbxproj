@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5470562B25FC7E88000BB552 /* stepupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5470562A25FC7E88000BB552 /* stepupApp.swift */; };
+		5470562B25FC7E88000BB552 /* StepUpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5470562A25FC7E88000BB552 /* StepUpApp.swift */; };
 		5470562D25FC7E88000BB552 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5470562C25FC7E88000BB552 /* ContentView.swift */; };
 		5470562F25FC7E89000BB552 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5470562E25FC7E89000BB552 /* Assets.xcassets */; };
 		5470563225FC7E89000BB552 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5470563125FC7E89000BB552 /* Preview Assets.xcassets */; };
@@ -64,16 +64,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5470562725FC7E88000BB552 /* stepup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stepup.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5470562A25FC7E88000BB552 /* stepupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stepupApp.swift; sourceTree = "<group>"; };
+		5470562725FC7E88000BB552 /* StepUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5470562A25FC7E88000BB552 /* StepUpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepUpApp.swift; sourceTree = "<group>"; };
 		5470562C25FC7E88000BB552 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5470562E25FC7E89000BB552 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5470563125FC7E89000BB552 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5470563325FC7E89000BB552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5470563825FC7E8A000BB552 /* stepupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stepupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5470563825FC7E8A000BB552 /* StepUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5470563C25FC7E8A000BB552 /* stepupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stepupTests.swift; sourceTree = "<group>"; };
 		5470563E25FC7E8A000BB552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5470564325FC7E8A000BB552 /* stepupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stepupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5470564325FC7E8A000BB552 /* StepUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5470564725FC7E8A000BB552 /* stepupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stepupUITests.swift; sourceTree = "<group>"; };
 		5470564925FC7E8A000BB552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5470565925FD34AA000BB552 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-4.0.1/Charts.xcodeproj"; sourceTree = "<group>"; };
@@ -109,10 +109,9 @@
 		5470561E25FC7E88000BB552 = {
 			isa = PBXGroup;
 			children = (
-				5470567025FD3646000BB552 /* LineChart.swift */,
-				5470562925FC7E88000BB552 /* stepup */,
-				5470563B25FC7E8A000BB552 /* stepupTests */,
-				5470564625FC7E8A000BB552 /* stepupUITests */,
+				5470562925FC7E88000BB552 /* StepUp */,
+				5470563B25FC7E8A000BB552 /* StepUpTests */,
+				5470564625FC7E8A000BB552 /* StepUpUITests */,
 				5470562825FC7E88000BB552 /* Products */,
 				5470565825FD34AA000BB552 /* Frameworks */,
 			);
@@ -121,23 +120,24 @@
 		5470562825FC7E88000BB552 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5470562725FC7E88000BB552 /* stepup.app */,
-				5470563825FC7E8A000BB552 /* stepupTests.xctest */,
-				5470564325FC7E8A000BB552 /* stepupUITests.xctest */,
+				5470562725FC7E88000BB552 /* StepUp.app */,
+				5470563825FC7E8A000BB552 /* StepUpTests.xctest */,
+				5470564325FC7E8A000BB552 /* StepUpUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5470562925FC7E88000BB552 /* stepup */ = {
+		5470562925FC7E88000BB552 /* StepUp */ = {
 			isa = PBXGroup;
 			children = (
-				5470562A25FC7E88000BB552 /* stepupApp.swift */,
+				5470567025FD3646000BB552 /* LineChart.swift */,
+				5470562A25FC7E88000BB552 /* StepUpApp.swift */,
 				5470562C25FC7E88000BB552 /* ContentView.swift */,
 				5470562E25FC7E89000BB552 /* Assets.xcassets */,
 				5470563325FC7E89000BB552 /* Info.plist */,
 				5470563025FC7E89000BB552 /* Preview Content */,
 			);
-			path = stepup;
+			path = StepUp;
 			sourceTree = "<group>";
 		};
 		5470563025FC7E89000BB552 /* Preview Content */ = {
@@ -148,22 +148,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		5470563B25FC7E8A000BB552 /* stepupTests */ = {
+		5470563B25FC7E8A000BB552 /* StepUpTests */ = {
 			isa = PBXGroup;
 			children = (
 				5470563C25FC7E8A000BB552 /* stepupTests.swift */,
 				5470563E25FC7E8A000BB552 /* Info.plist */,
 			);
-			path = stepupTests;
+			path = StepUpTests;
 			sourceTree = "<group>";
 		};
-		5470564625FC7E8A000BB552 /* stepupUITests */ = {
+		5470564625FC7E8A000BB552 /* StepUpUITests */ = {
 			isa = PBXGroup;
 			children = (
 				5470564725FC7E8A000BB552 /* stepupUITests.swift */,
 				5470564925FC7E8A000BB552 /* Info.plist */,
 			);
-			path = stepupUITests;
+			path = StepUpUITests;
 			sourceTree = "<group>";
 		};
 		5470565825FD34AA000BB552 /* Frameworks */ = {
@@ -186,9 +186,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5470562625FC7E88000BB552 /* stepup */ = {
+		5470562625FC7E88000BB552 /* StepUp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5470564C25FC7E8A000BB552 /* Build configuration list for PBXNativeTarget "stepup" */;
+			buildConfigurationList = 5470564C25FC7E8A000BB552 /* Build configuration list for PBXNativeTarget "StepUp" */;
 			buildPhases = (
 				5470562325FC7E88000BB552 /* Sources */,
 				5470562425FC7E88000BB552 /* Frameworks */,
@@ -199,14 +199,14 @@
 			);
 			dependencies = (
 			);
-			name = stepup;
+			name = StepUp;
 			productName = stepup;
-			productReference = 5470562725FC7E88000BB552 /* stepup.app */;
+			productReference = 5470562725FC7E88000BB552 /* StepUp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5470563725FC7E8A000BB552 /* stepupTests */ = {
+		5470563725FC7E8A000BB552 /* StepUpTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5470564F25FC7E8A000BB552 /* Build configuration list for PBXNativeTarget "stepupTests" */;
+			buildConfigurationList = 5470564F25FC7E8A000BB552 /* Build configuration list for PBXNativeTarget "StepUpTests" */;
 			buildPhases = (
 				5470563425FC7E8A000BB552 /* Sources */,
 				5470563525FC7E8A000BB552 /* Frameworks */,
@@ -217,14 +217,14 @@
 			dependencies = (
 				5470563A25FC7E8A000BB552 /* PBXTargetDependency */,
 			);
-			name = stepupTests;
+			name = StepUpTests;
 			productName = stepupTests;
-			productReference = 5470563825FC7E8A000BB552 /* stepupTests.xctest */;
+			productReference = 5470563825FC7E8A000BB552 /* StepUpTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5470564225FC7E8A000BB552 /* stepupUITests */ = {
+		5470564225FC7E8A000BB552 /* StepUpUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5470565225FC7E8A000BB552 /* Build configuration list for PBXNativeTarget "stepupUITests" */;
+			buildConfigurationList = 5470565225FC7E8A000BB552 /* Build configuration list for PBXNativeTarget "StepUpUITests" */;
 			buildPhases = (
 				5470563F25FC7E8A000BB552 /* Sources */,
 				5470564025FC7E8A000BB552 /* Frameworks */,
@@ -235,9 +235,9 @@
 			dependencies = (
 				5470564525FC7E8A000BB552 /* PBXTargetDependency */,
 			);
-			name = stepupUITests;
+			name = StepUpUITests;
 			productName = stepupUITests;
-			productReference = 5470564325FC7E8A000BB552 /* stepupUITests.xctest */;
+			productReference = 5470564325FC7E8A000BB552 /* StepUpUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -262,7 +262,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5470562225FC7E88000BB552 /* Build configuration list for PBXProject "stepup" */;
+			buildConfigurationList = 5470562225FC7E88000BB552 /* Build configuration list for PBXProject "StepUp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -281,9 +281,9 @@
 			);
 			projectRoot = "";
 			targets = (
-				5470562625FC7E88000BB552 /* stepup */,
-				5470563725FC7E8A000BB552 /* stepupTests */,
-				5470564225FC7E8A000BB552 /* stepupUITests */,
+				5470562625FC7E88000BB552 /* StepUp */,
+				5470563725FC7E8A000BB552 /* StepUpTests */,
+				5470564225FC7E8A000BB552 /* StepUpUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -338,7 +338,7 @@
 			files = (
 				5470567125FD3646000BB552 /* LineChart.swift in Sources */,
 				5470562D25FC7E88000BB552 /* ContentView.swift in Sources */,
-				5470562B25FC7E88000BB552 /* stepupApp.swift in Sources */,
+				5470562B25FC7E88000BB552 /* StepUpApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,12 +363,12 @@
 /* Begin PBXTargetDependency section */
 		5470563A25FC7E8A000BB552 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5470562625FC7E88000BB552 /* stepup */;
+			target = 5470562625FC7E88000BB552 /* StepUp */;
 			targetProxy = 5470563925FC7E8A000BB552 /* PBXContainerItemProxy */;
 		};
 		5470564525FC7E8A000BB552 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5470562625FC7E88000BB552 /* stepup */;
+			target = 5470562625FC7E88000BB552 /* StepUp */;
 			targetProxy = 5470564425FC7E8A000BB552 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -505,10 +505,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.darkshadow.stepup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -527,10 +528,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.darkshadow.stepup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -552,7 +554,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/stepup.app/stepup";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StepUp.app/StepUp";
 			};
 			name = Debug;
 		};
@@ -574,7 +576,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/stepup.app/stepup";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StepUp.app/StepUp";
 			};
 			name = Release;
 		};
@@ -621,7 +623,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5470562225FC7E88000BB552 /* Build configuration list for PBXProject "stepup" */ = {
+		5470562225FC7E88000BB552 /* Build configuration list for PBXProject "StepUp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5470564A25FC7E8A000BB552 /* Debug */,
@@ -630,7 +632,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5470564C25FC7E8A000BB552 /* Build configuration list for PBXNativeTarget "stepup" */ = {
+		5470564C25FC7E8A000BB552 /* Build configuration list for PBXNativeTarget "StepUp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5470564D25FC7E8A000BB552 /* Debug */,
@@ -639,7 +641,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5470564F25FC7E8A000BB552 /* Build configuration list for PBXNativeTarget "stepupTests" */ = {
+		5470564F25FC7E8A000BB552 /* Build configuration list for PBXNativeTarget "StepUpTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5470565025FC7E8A000BB552 /* Debug */,
@@ -648,7 +650,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5470565225FC7E8A000BB552 /* Build configuration list for PBXNativeTarget "stepupUITests" */ = {
+		5470565225FC7E8A000BB552 /* Build configuration list for PBXNativeTarget "StepUpUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5470565325FC7E8A000BB552 /* Debug */,
