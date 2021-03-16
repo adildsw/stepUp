@@ -43,11 +43,12 @@ struct ContentView: View {
     @State private var stepFlag : Bool = true
     
     @State private var lastStepTimeIdx : Int = 0
+    @State private var lastMovementStatusTimeIdx : Int = 0
     
     private let stepThreshold : Double = 1.1
     private let stepReleaseThreshold : Double = 1.0
     private let runStepThreshold : Double = 1.4
-    private let jumpThreshold : Double = 2.0
+    private let jumpThreshold : Double = 2.4
     private let jumpPenalty : Int = 2
     private let moveRetentionTimeThreshold = 40
     
@@ -211,9 +212,10 @@ struct ContentView: View {
                         lastStepTimeIdx = timeIdx
                         
                         // Overwriting "Running" and "Jumping" status to "Walking" only if move retention time has passed
-                        if movementStatus == "Idle" || timeIdx - lastStepTimeIdx > moveRetentionTimeThreshold {
+                        if movementStatus == "Idle" || timeIdx - lastStepTimeIdx > moveRetentionTimeThreshold || timeIdx - lastMovementStatusTimeIdx > moveRetentionTimeThreshold {
                             movementStatus = "Walking"
                             movementStatusColor = Color.green
+                            lastMovementStatusTimeIdx = timeIdx
                         }
                         
                     }
@@ -226,6 +228,7 @@ struct ContentView: View {
                         // Only keeping track of the time when jumping was initially triggered
                         if movementStatus != "Jumping" {
                             lastStepTimeIdx = timeIdx
+                            lastMovementStatusTimeIdx = timeIdx
                         }
                         
                         movementStatus = "Jumping"
@@ -238,6 +241,7 @@ struct ContentView: View {
                             // Only keeping track of the time when running was initially triggered
                             if movementStatus != "Running" {
                                 lastStepTimeIdx = timeIdx
+                                lastMovementStatusTimeIdx = timeIdx
                             }
                             movementStatus = "Running"
                             movementStatusColor = Color.purple
